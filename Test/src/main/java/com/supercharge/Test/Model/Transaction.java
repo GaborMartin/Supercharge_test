@@ -37,4 +37,13 @@ public abstract class Transaction {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "date=" + date +
+                ", amount=" + amount +
+                ", balance=" + balance +
+                '}';
+    }
 }
