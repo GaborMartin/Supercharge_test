@@ -52,6 +52,6 @@ public class BankAccount {
     public String toString() {
         return "AccountNumber: " + accountNumber
                 + ", Balance: " + balance
-                + ", transactions: " + transactions + '}';
+                + ", transactions: " + transactions;
     }
 }
