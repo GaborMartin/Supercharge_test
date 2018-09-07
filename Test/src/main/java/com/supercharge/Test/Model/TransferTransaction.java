@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class TransferTransaction extends Transaction {
 
-    public TransferTransaction(Date date, Double amount, Double balance) {
-        super(date, amount, balance);
+    public TransferTransaction(Double amount) {
+        super(amount);
     }
 }
