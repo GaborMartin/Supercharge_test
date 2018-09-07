@@ -1,12 +1,13 @@
-package com.supercharge.Test.Model;
+package com.supercharge.Test.model;
+
 import java.util.Date;
 
 public abstract class Transaction {
 
     private Date date;
-    private Double amount;
+    private Long amount;
 
-    public Transaction(Double amount) {
+    public Transaction(Long amount) {
         this.date = new Date();
         this.amount = amount;
     }
@@ -19,19 +20,16 @@ public abstract class Transaction {
         this.date = date;
     }
 
-    public Double getAmount() {
+    public Long getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    public void setAmount(Long amount) {
         this.amount = amount;
     }
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "date=" + date +
-                ", amount=" + amount +
-                '}';
+        return "Date: "+ date + ", Amount: " + amount;
     }
 }
