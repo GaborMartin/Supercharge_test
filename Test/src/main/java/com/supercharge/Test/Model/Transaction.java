@@ -1,17 +1,14 @@
 package com.supercharge.Test.Model;
-
 import java.util.Date;
 
 public abstract class Transaction {
 
     private Date date;
     private Double amount;
-    private Double balance;
 
-    public Transaction(Date date, Double amount, Double balance) {
-        this.date = date;
+    public Transaction(Double amount) {
+        this.date = new Date();
         this.amount = amount;
-        this.balance = balance;
     }
 
     public Date getDate() {
@@ -30,20 +27,11 @@ public abstract class Transaction {
         this.amount = amount;
     }
 
-    public Double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(Double balance) {
-        this.balance = balance;
-    }
-
     @Override
     public String toString() {
         return "Transaction{" +
                 "date=" + date +
                 ", amount=" + amount +
-                ", balance=" + balance +
                 '}';
     }
 }
