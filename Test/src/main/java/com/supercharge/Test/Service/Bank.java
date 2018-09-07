@@ -1,11 +1,13 @@
 package com.supercharge.Test.Service;
 
+import com.supercharge.Test.Model.BankAccount;
+
 public interface Bank {
 
-    void transferMoney(String accountNumber, Double amount);
+    void transferMoney(BankAccount myAccount, BankAccount destinationAccount, Double amount);
 
-    void depositMoney(String accountNumber, Double amount);
+    void depositMoney(BankAccount myAccount, Double amount);
 
-    void withDrawalMoney(String accountNumber, Double amount);
+    void withDrawalMoney(BankAccount myAccount, Double amount);
 
 }
